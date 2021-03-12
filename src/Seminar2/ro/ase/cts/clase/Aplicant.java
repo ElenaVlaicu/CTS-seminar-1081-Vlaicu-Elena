@@ -6,9 +6,30 @@ public abstract class Aplicant{
 	protected int varsta;
 	protected int punctaj;
 	protected int nr_proiecte;
-	protected String[] denumireProiect;
-	
-	
+	protected String[] denumiriProiecte;
+
+	public String[] getDenumiriProiecte() {
+		return denumiriProiecte;
+	}
+
+	public void setDenumiriProiecte(String[] denumiriProiecte) {
+		this.denumiriProiecte = denumiriProiecte;
+	}
+
+	public Aplicant() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
+		super();
+		this.nume = nume;
+		this.prenume = prenume;
+		this.varsta = varsta;
+		this.punctaj = punctaj;
+		this.nr_proiecte = nr_proiecte;
+		this.denumiriProiecte = denumireProiect;
+	}
+
 	public String getNume() {
 		return nume;
 	}
@@ -27,34 +48,11 @@ public abstract class Aplicant{
 	public void setVarsta(int varsta) {
 		this.varsta = varsta;
 	}
-	public void statut(){
-		if(punctaj>80)
-			System.out.println("Aplicantul "+nume+" "+prenume+" a fost acceptat.");
-		else
-			System.out.println("Aplicantul "+nume+" "+prenume+" nu a fost acceptat.");
-		}
 	public int getPunctaj() {
 		return punctaj;
 	}
 	public void setPunctaj(int punctaj) {
 		this.punctaj = punctaj;
-	}
-	
-	
-
-	
-	public Aplicant() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
-		super();
-		this.nume = nume;
-		this.prenume = prenume;
-		this.varsta = varsta;
-		this.punctaj = punctaj;
-		this.nr_proiecte = nr_proiecte;
-		this.denumireProiect = denumireProiect;
 	}
 	public int getNr_proiecte() {
 		return nr_proiecte;
@@ -63,4 +61,11 @@ public abstract class Aplicant{
 		this.nr_proiecte = nr_proiecte;
 	}
 
+
+	public void statut(){
+		if(punctaj>80)
+			System.out.println("Aplicantul "+nume+" "+prenume+" a fost acceptat.");
+		else
+			System.out.println("Aplicantul "+nume+" "+prenume+" nu a fost acceptat.");
+		}
 }
