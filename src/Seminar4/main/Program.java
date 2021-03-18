@@ -5,6 +5,7 @@ import Seminar1.clase.Zebra;
 import Seminar1.clase.Zoo;
 import Seminar4.clase.Presedinte;
 import Seminar4.clase.PresedinteLazy;
+import Seminar4.clase.Televizor;
 
 public class Program {
 
@@ -37,8 +38,23 @@ public class Program {
         PresedinteLazy presedinteLazy = PresedinteLazy.getInstance("lazy", 40, 40);
         PresedinteLazy presedinteLazy1 = PresedinteLazy.getInstance("lazy1", 39, 3);
 
-        System.out.println(presedinteLazy.toString()); //este doar instanta asta
+        System.out.println(presedinteLazy.toString());
         System.out.println(presedinteLazy1.toString());
+
+        System.out.println("...........TELEVIZOR.........");
+
+        Televizor televizor = Televizor.getInstance("Philips", 200, 5000);
+        Televizor televizor1 = Televizor.getInstance("Samsung", 100, 1542.45f);
+
+        System.out.println(televizor.toString());
+        System.out.println(televizor1.toString());
+
+        televizor.setMarca("Daewoo");
+        televizor1.setNrCanale(20);
+
+        System.out.println(televizor.toString());
+        System.out.println(televizor1.toString());
+
 
     }
 }

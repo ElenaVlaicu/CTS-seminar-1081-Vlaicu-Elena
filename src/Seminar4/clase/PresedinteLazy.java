@@ -11,17 +11,16 @@ public class PresedinteLazy {
 
     private static PresedinteLazy instance = null;
 
-    public PresedinteLazy(String nume, int varsta, int mandat) {
+    private PresedinteLazy(String nume, int varsta, int mandat) {
         this.nume = nume;
         this.varsta = varsta;
         this.mandat = mandat;
     }
 
-    public PresedinteLazy() {
+    private PresedinteLazy() {
         this.nume = "LazyPutin";
         this.varsta = 68;
         this.mandat = 10;
-
     }
 
     public void setNume(String nume) {
