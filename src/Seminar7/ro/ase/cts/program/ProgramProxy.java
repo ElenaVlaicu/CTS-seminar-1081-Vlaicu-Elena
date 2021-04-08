@@ -16,6 +16,5 @@ public class ProgramProxy {
         proxy.creareCredit(Moneda.EUR, 333.2f); //nu poate oferi in euro
         proxy.creareCredit(Moneda.RON, 10000.2f);
 
-
     }
 }
