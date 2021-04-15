@@ -1,6 +1,7 @@
 package Seminar5.clase;
 
 public class Asistent extends PersonalSpital{
+
     public Asistent(String name) {
         super(name);
     }

@@ -15,14 +15,14 @@ public class Presedinte {
         this.mandat = mandat;
     }
 
-    public Presedinte() {
+    private Presedinte() {
         this.nume = "Putin";
         this.varsta = 68;
         this.mandat = 10;
     }
 
     //eager initialization - poate fi si private si public, dar de obicei e private
-    public static Presedinte instance = new Presedinte();
+    private static Presedinte instance = new Presedinte();
 
     public static Presedinte genInstance(){
         return instance;

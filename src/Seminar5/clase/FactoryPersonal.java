@@ -1,6 +1,7 @@
 package Seminar5.clase;
 
 public class FactoryPersonal {
+
     public PersonalSpital createPersonal(TipPersonal tip, String name){
         switch (tip) {
             case Asistent:

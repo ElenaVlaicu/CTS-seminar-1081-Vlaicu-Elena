@@ -1,6 +1,7 @@
 package Seminar5.clase;
 
 public class Medic extends PersonalSpital{
+
     public Medic(String name) {
         super(name);
     }
