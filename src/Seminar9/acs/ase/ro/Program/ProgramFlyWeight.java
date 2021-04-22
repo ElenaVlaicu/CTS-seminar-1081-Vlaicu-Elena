@@ -1,6 +1,5 @@
-package Seminar9.acs.ase.ro.ProgramFlyweight;
+package Seminar9.acs.ase.ro.Program;
 
-import Seminar9.acs.ase.ro.claseFlyweight.Client;
 import Seminar9.acs.ase.ro.claseFlyweight.Flyweight;
 import Seminar9.acs.ase.ro.claseFlyweight.FlyweightFactory;
 import Seminar9.acs.ase.ro.claseFlyweight.Rezervare;
