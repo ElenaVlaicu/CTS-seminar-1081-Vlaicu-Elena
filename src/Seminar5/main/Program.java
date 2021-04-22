@@ -1,9 +1,8 @@
 package Seminar5.main;
 
-import Seminar5.clase.Asistent;
-import Seminar5.clase.FactoryPersonal;
-import Seminar5.clase.PersonalSpital;
-import Seminar5.clase.TipPersonal;
+import Seminar5.claseSimpleFactory.FactoryPersonal;
+import Seminar5.claseSimpleFactory.PersonalSpital;
+import Seminar5.claseSimpleFactory.TipPersonal;
 
 public class Program {
 

@@ -1,4 +1,4 @@
-package Seminar5.clase;
+package Seminar5.claseSimpleFactory;
 
 public abstract class PersonalSpital {
 

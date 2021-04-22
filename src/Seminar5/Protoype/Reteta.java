@@ -9,7 +9,7 @@ public class Reteta implements PrototipAbtract{
         this.cantitateSolutie = cantitateSolutie;
     }
 
-    public Reteta() {
+    private Reteta() {
 
     }
 
