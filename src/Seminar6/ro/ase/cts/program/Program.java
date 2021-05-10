@@ -1,13 +1,16 @@
 package Seminar6.ro.ase.cts.program;
 
-import Seminar6.ro.ase.cts.clase.Rezervare;
-import Seminar6.ro.ase.cts.clase.RezervareBuilder;
-import Seminar6.ro.ase.cts.clase.RezervareBuilderV2;
+import Seminar6.ro.ase.cts.Builder.Rezervare;
+import Seminar6.ro.ase.cts.Builder.RezervareBuilder;
+import Seminar6.ro.ase.cts.Builder.RezervareBuilderV2;
 
 public class Program {
 
     public static void main(String [] args) {
         Rezervare rezervare1;
+
+        //shallow copy
+        //fac un builder pt fiecare rezervare
 
         RezervareBuilder rezervareBuilder = new RezervareBuilder();
         rezervareBuilder.setCodRezervare(12).setAreMancare(true);
@@ -25,6 +28,9 @@ public class Program {
         System.out.println(rezervare2);
         System.out.println(rezervare3);
         System.out.println(rezervare4);
+
+        //deppcopy
+        //un buildder pt oricate rezervari
 
         RezervareBuilderV2 rezervareBuilderV2 = new RezervareBuilderV2().setAreMancare(true).setAreMuzicaAmbientala(true);
         Rezervare rezervare5 = rezervareBuilderV2.setCodRezervare(1111).build();

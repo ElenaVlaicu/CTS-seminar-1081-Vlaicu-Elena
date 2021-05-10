@@ -3,7 +3,7 @@ package Seminar9.acs.ase.ro.claseFlyweight;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FlyweightFactory implements Flyweight{
+public class FlyweightFactory{
 
     //relatie has a = factory constine o colectie de obiecte flyweight
     //cheia este nr de tel
@@ -27,8 +27,4 @@ public class FlyweightFactory implements Flyweight{
         }
     }
 
-    @Override
-    public void printeazaRezervare(Rezervare rezervare) {
-
-    }
 }

@@ -1,4 +1,4 @@
-package Seminar6.ro.ase.cts.clase;
+package Seminar6.ro.ase.cts.Builder;
 
 public interface AbstractBuilder {
 

@@ -9,8 +9,8 @@ public class Reteta implements PrototipAbtract{
         this.cantitateSolutie = cantitateSolutie;
     }
 
+    //neaparat privat
     private Reteta() {
-
     }
 
     @Override
@@ -22,6 +22,7 @@ public class Reteta implements PrototipAbtract{
         return sb.toString();
     }
 
+    //shallow copy
     public PrototipAbtract copiaza(){
         Reteta copie = new Reteta();
         copie.cantitateSolutie = this.cantitateSolutie;
