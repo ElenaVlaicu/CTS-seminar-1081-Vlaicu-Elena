@@ -20,6 +20,7 @@ public class Masa {
         }
         else {
             System.out.println("Masa nu poate fi ocupata");
+            this.esteOcupata = false;
         }
     }
 
@@ -30,6 +31,7 @@ public class Masa {
         }
         else {
             System.out.println("Masa nu poate fi rezervata");
+            this.esteRezervata = false;
         }
     }
 }

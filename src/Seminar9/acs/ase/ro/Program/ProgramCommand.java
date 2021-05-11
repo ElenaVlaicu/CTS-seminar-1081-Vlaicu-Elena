@@ -13,11 +13,15 @@ public class ProgramCommand {
         Comanda comandaOcupare1 = new ComandaOcupare(masa1);
 
         Operator operator = new Operator();
-        operator.invoca(comandaOcupare);
-        operator.invoca(comandaOcupare1);
-        operator.executaComanda();
-        operator.invoca(comandaRezervare);
 
+        operator.invoca(comandaRezervare);
+        operator.invoca(comandaOcupare);
+
+        operator.invoca(comandaOcupare1);
+
+
+
+        operator.executaComanda();
         operator.executaComanda();
         operator.executaComanda();
 
