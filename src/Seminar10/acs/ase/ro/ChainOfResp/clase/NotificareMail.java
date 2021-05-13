@@ -2,8 +2,6 @@ package Seminar10.acs.ase.ro.ChainOfResp.clase;
 
 public class NotificareMail extends Notificator{
 
-
-
     @Override
     public void trimiteNotificare(Client client, String text) {
         if(client.getMail()!=null){
