@@ -82,4 +82,36 @@ class StudentTest {
         assertFalse(student.areRestante());
     }
 
+    @Test
+    public void testGetNotaExceptie(){
+        Student student = new Student();
+        student.adaugaNota(4);
+        student.adaugaNota(7);
+
+        try{
+            student.getNota(5);
+        } catch(IndexOutOfBoundsException e){
+
+        }
+    }
+
+    /*
+    @Test(expected = IndexOutOfBoundsException.class)
+        public void testGetNotaExceptieV4(){
+            Student student = new Student();
+            student.adaugaNota(5);
+            student.adaugaNota(6);
+        }
+
+
+     */
+    @Test
+    public void testGetNotaExceptieV5() {
+        Student student = new Student();
+        student.adaugaNota(7);
+        student.adaugaNota(5);
+
+        assertThrows(IndexOutOfBoundsException.class, () -> {student.getNota(5);});
+    }
+
 }
